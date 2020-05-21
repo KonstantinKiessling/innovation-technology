@@ -10,7 +10,7 @@ import { engineData } from '../models/engineData';
 export class AppChartContainerComponent implements OnInit {
 
   url: string = 'http://it2wi1.if-lab.de/rest/mpr_fall1'
-  data:engineData[];
+  data: engineData[];
 
   constructor(private http: HttpClient) { }
 
