@@ -1,17 +1,20 @@
-import { Component, OnChanges, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {engineData,} from '../models/engineData';
 import {engineValues} from '../models/engineValues';
 import { Chart } from 'chart.js';
 import * as ChartAnnotation from 'chartjs-plugin-annotation';
+import { DataService } from '../data-service/data.service'
 
 @Component({
-  selector: 'app-app-area-chart',
-  templateUrl: './app-area-chart.component.html',
-  styleUrls: ['./app-area-chart.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class AppAreaChartComponent implements OnChanges {
+export class HomeComponent implements OnInit {
 
-  @Input() data: engineData[];
+  constructor(private dataService: DataService) { }
+
+  data: engineData[];
 
   chart_rpm = [];
   chart_temp = [];
@@ -26,24 +29,23 @@ export class AppAreaChartComponent implements OnChanges {
   private Qualitaetsgrenze;
   private Datum;
 
-  constructor() { }
-
-  ngOnChanges() {
-    this.rpm = this.data.map(dataPoint => Number(dataPoint.werte.Rpm));
-    this.Tavg_temp = this.data.map(dataPoint => parseFloat(dataPoint.werte.Tavg_temp));
-    this.Tavg_laut = this.data.map(dataPoint => parseFloat(dataPoint.werte.Tavg_laut));
-    this.Tagv_vibr = this.data.map(dataPoint => parseFloat(dataPoint.werte.Tavg_vibr));
-    this.Qualitaetsgrenze = this.data.map(dataPoint => parseFloat(dataPoint.werte.Qualitaetsgrenze));
-    this.Datum = this.data.map(dataPoint => this.parseDate(dataPoint.datum));
-    console.log(this.Tavg_temp);
+  ngOnInit(){
+    this.dataService.getData();
+    this.dataService.dataChangeEvent.subscribe(data => {
+    this.rpm = data.map(dataPoint => Number(dataPoint.werte.Rpm));
+    this.Tavg_temp = data.map(dataPoint => parseFloat(dataPoint.werte.Tavg_temp));
+    this.Tavg_laut = data.map(dataPoint => parseFloat(dataPoint.werte.Tavg_laut));
+    this.Tagv_vibr = data.map(dataPoint => parseFloat(dataPoint.werte.Tavg_vibr));
+    this.Qualitaetsgrenze = data.map(dataPoint => parseFloat(dataPoint.werte.Qualitaetsgrenze));
+    this.Datum = data.map(dataPoint => this.parseDate(dataPoint.datum));
     this.makeChart();
-  }
+    });
 
-  ngOnInit() {
     let namedChartAnnotation = ChartAnnotation;
     namedChartAnnotation["id"]="annotation";
     Chart.pluginService.register( namedChartAnnotation);
   }
+
 
   parseDate(date:string): Date{
     var parts = date.split(/\.|\s|:/);

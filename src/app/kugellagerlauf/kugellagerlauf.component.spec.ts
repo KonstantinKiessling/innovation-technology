@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppChartContainerComponent } from './app-chart-container.component';
+import { KugellagerlaufComponent } from './kugellagerlauf.component';
 
-describe('AppChartContainerComponent', () => {
-  let component: AppChartContainerComponent;
-  let fixture: ComponentFixture<AppChartContainerComponent>;
+describe('KugellagerlaufComponent', () => {
+  let component: KugellagerlaufComponent;
+  let fixture: ComponentFixture<KugellagerlaufComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppChartContainerComponent ]
+      declarations: [ KugellagerlaufComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AppChartContainerComponent);
+    fixture = TestBed.createComponent(KugellagerlaufComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

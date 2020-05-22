@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppAreaChartComponent } from './app-area-chart.component';
+import { AnlageninnenlebenComponent } from './anlageninnenleben.component';
 
-describe('AppAreaChartComponent', () => {
-  let component: AppAreaChartComponent;
-  let fixture: ComponentFixture<AppAreaChartComponent>;
+describe('AnlageninnenlebenComponent', () => {
+  let component: AnlageninnenlebenComponent;
+  let fixture: ComponentFixture<AnlageninnenlebenComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppAreaChartComponent ]
+      declarations: [ AnlageninnenlebenComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AppAreaChartComponent);
+    fixture = TestBed.createComponent(AnlageninnenlebenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

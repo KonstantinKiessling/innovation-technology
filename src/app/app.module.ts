@@ -4,16 +4,22 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppAreaChartComponent } from './app-area-chart/app-area-chart.component';
-import { AppChartContainerComponent } from './app-chart-container/app-chart-container.component';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { SettingsComponent } from './settings/settings.component';
+import { SchmiermittelComponent } from './schmiermittel/schmiermittel.component';
+import { KugellagerlaufComponent } from './kugellagerlauf/kugellagerlauf.component';
+import { AnlageninnenlebenComponent } from './anlageninnenleben/anlageninnenleben.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppAreaChartComponent,
-    AppChartContainerComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    SettingsComponent,
+    SchmiermittelComponent,
+    KugellagerlaufComponent,
+    AnlageninnenlebenComponent
   ],
   imports: [
     BrowserModule,
