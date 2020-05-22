@@ -1,3 +1,16 @@
-<div *ngIf="chart">
-  <canvas id="canvas">{{ chart }}</canvas>
+<div>
+  <h1>RPM</h1>
+  <canvas id="rpm">{{ chart_rpm }}</canvas>
+  <br>
+  <h1>Temp</h1>
+  <canvas id="Tavg_temp">{{ chart_temp }}</canvas>
+  <br>
+  <h1>Laut</h1>
+  <canvas id="Tavg_laut">{{ chart_laut }}</canvas>
+  <br>
+  <h1>Vibr</h1>
+  <canvas id="Tagv_vibr">{{ chart_vibr }}</canvas>
+  <br>
+  <h1>Qualitaetsgrenze</h1>
+  <canvas id="Qualitaetsgrenze">{{ chart_qualitaetsgrenze }}</canvas>
 </div>

@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppAreaChartComponent } from './app-area-chart/app-area-chart.component';
 import { AppChartContainerComponent } from './app-chart-container/app-chart-container.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppAreaChartComponent,
-    AppChartContainerComponent
+    AppChartContainerComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
