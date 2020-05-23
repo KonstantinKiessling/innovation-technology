@@ -12,6 +12,7 @@ const routes: Routes = [
   {path: 'Anlageninnenleben', component: AnlageninnenlebenComponent},
   {path: 'Kugellagerlauf', component: KugellagerlaufComponent},
   {path: 'Schmiermittel', component: SchmiermittelComponent},
+  {path: '', redirectTo: 'Home', pathMatch: 'full'},
 ];
 
 @NgModule({

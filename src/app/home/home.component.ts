@@ -73,6 +73,12 @@ export class HomeComponent implements OnInit {
         },
         scales: {
           xAxes: [{
+            gridLines: {
+              color: '#000000',
+            },
+            ticks: {
+              fontColor: '#000000',
+            },
             display: true,
             type: 'time',
             time: {
@@ -82,6 +88,12 @@ export class HomeComponent implements OnInit {
             }
           }],
           yAxes: [{
+            gridLines: {
+              color: '#000000',
+            },
+            ticks: {
+              fontColor: '#000000',
+            },
             display: true
           }],
         }
@@ -108,6 +120,12 @@ export class HomeComponent implements OnInit {
         },
         scales: {
           xAxes: [{
+            gridLines: {
+              color: '#000000',
+            },
+            ticks: {
+              fontColor: '#000000',
+            },
             display: true,
             type: 'time',
             time: {
@@ -117,6 +135,12 @@ export class HomeComponent implements OnInit {
             }
           }],
           yAxes: [{
+            gridLines: {
+              color: '#000000',
+            },
+            ticks: {
+              fontColor: '#000000',
+            },
             display: true
           }],
         },
@@ -138,7 +162,7 @@ export class HomeComponent implements OnInit {
             mode: 'horizontal',
             scaleID: 'y-axis-0',
             value: 150,
-            borderColor: 'red',
+            borderColor: '#d24525',
             borderWidth: 5,
             label: {
               enabled: true,
@@ -170,6 +194,12 @@ export class HomeComponent implements OnInit {
         },
         scales: {
           xAxes: [{
+            gridLines: {
+              color: '#000000',
+            },
+            ticks: {
+              fontColor: '#000000',
+            },
             display: true,
             type: 'time',
             time: {
@@ -179,6 +209,12 @@ export class HomeComponent implements OnInit {
             }
           }],
           yAxes: [{
+            gridLines: {
+              color: '#000000',
+            },
+            ticks: {
+              fontColor: '#000000',
+            },
             display: true
           }],
         },
@@ -200,7 +236,7 @@ export class HomeComponent implements OnInit {
             mode: 'horizontal',
             scaleID: 'y-axis-0',
             value: 117,
-            borderColor: 'red',
+            borderColor: '#d24525',
             borderWidth: 5,
             label: {
               enabled: true,
@@ -232,6 +268,12 @@ export class HomeComponent implements OnInit {
         },
         scales: {
           xAxes: [{
+            gridLines: {
+              color: '#000000',
+            },
+            ticks: {
+              fontColor: '#000000',
+            },
             display: true,
             type: 'time',
             time: {
@@ -241,6 +283,12 @@ export class HomeComponent implements OnInit {
             }
           }],
           yAxes: [{
+            gridLines: {
+              color: '#000000',
+            },
+            ticks: {
+              fontColor: '#000000',
+            },
             display: true
           }],
         },
@@ -262,7 +310,7 @@ export class HomeComponent implements OnInit {
             mode: 'horizontal',
             scaleID: 'y-axis-0',
             value: 0.4,
-            borderColor: 'red',
+            borderColor: '#d24525',
             borderWidth: 5,
             label: {
               enabled: true,
@@ -294,6 +342,12 @@ export class HomeComponent implements OnInit {
         },
         scales: {
           xAxes: [{
+            gridLines: {
+              color: '#000000',
+            },
+            ticks: {
+              fontColor: '#000000',
+            },
             display: true,
             type: 'time',
             time: {
@@ -303,6 +357,12 @@ export class HomeComponent implements OnInit {
             }
           }],
           yAxes: [{
+            gridLines: {
+              color: '#000000',
+            },
+            ticks: {
+              fontColor: '#000000',
+            },
             display: true
           }],
         }
