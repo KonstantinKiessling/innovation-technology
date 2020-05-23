@@ -9,8 +9,6 @@ export class AnlageninnenlebenComponent implements OnInit {
 
   constructor() { }
 
-  data: engineData[];
-
   ngOnInit() {
     document.getElementById('home').classList.remove('active');
     document.getElementById('schmiermittel').classList.remove('active');
