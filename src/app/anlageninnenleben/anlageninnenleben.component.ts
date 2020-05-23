@@ -9,7 +9,14 @@ export class AnlageninnenlebenComponent implements OnInit {
 
   constructor() { }
 
+  data: engineData[];
+
   ngOnInit() {
+    document.getElementById('home').classList.remove('active');
+    document.getElementById('schmiermittel').classList.remove('active');
+    document.getElementById('kugellagerlauf').classList.remove('active');
+    document.getElementById('anlageninnenleben').classList.add('active');
+    document.getElementById('einstellungen').classList.remove('active');
   }
 
 }

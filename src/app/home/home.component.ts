@@ -30,6 +30,11 @@ export class HomeComponent implements OnInit {
   private Datum;
 
   ngOnInit(){
+    document.getElementById('home').classList.add('active');
+    document.getElementById('schmiermittel').classList.remove('active');
+    document.getElementById('kugellagerlauf').classList.remove('active');
+    document.getElementById('anlageninnenleben').classList.remove('active');
+    document.getElementById('einstellungen').classList.remove('active');
     this.dataService.getData();
     this.dataService.dataChangeEvent.subscribe(data => {
     this.rpm = data.map(dataPoint => Number(dataPoint.werte.Rpm));
