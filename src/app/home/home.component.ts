@@ -79,10 +79,10 @@ export class HomeComponent implements OnInit {
         scales: {
           xAxes: [{
             gridLines: {
-              color: '#000000',
+              color: '#e9edf2',
             },
             ticks: {
-              fontColor: '#000000',
+              fontColor: '#e9edf2',
             },
             display: true,
             type: 'time',
@@ -94,10 +94,10 @@ export class HomeComponent implements OnInit {
           }],
           yAxes: [{
             gridLines: {
-              color: '#000000',
+              color: '#e9edf2',
             },
             ticks: {
-              fontColor: '#000000',
+              fontColor: '#e9edf2',
             },
             display: true
           }],
@@ -126,10 +126,10 @@ export class HomeComponent implements OnInit {
         scales: {
           xAxes: [{
             gridLines: {
-              color: '#000000',
+              color: '#e9edf2',
             },
             ticks: {
-              fontColor: '#000000',
+              fontColor: '#e9edf2',
             },
             display: true,
             type: 'time',
@@ -141,10 +141,10 @@ export class HomeComponent implements OnInit {
           }],
           yAxes: [{
             gridLines: {
-              color: '#000000',
+              color: '#e9edf2',
             },
             ticks: {
-              fontColor: '#000000',
+              fontColor: '#e9edf2',
             },
             display: true
           }],
