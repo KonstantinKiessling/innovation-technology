@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {engineData,} from '../models/engineData';
-import {engineValues} from '../models/engineValues';
 import { Chart } from 'chart.js';
 import * as ChartAnnotation from 'chartjs-plugin-annotation';
 import { DataService } from '../data-service/data.service'
@@ -81,6 +80,7 @@ export class HomeComponent implements OnInit {
           xAxes: [{
             gridLines: {
               color: '#e9edf2',
+              display: false,
             },
             ticks: {
               fontColor: '#e9edf2',
@@ -96,6 +96,7 @@ export class HomeComponent implements OnInit {
           yAxes: [{
             gridLines: {
               color: '#e9edf2',
+              display: false,
             },
             ticks: {
               fontColor: '#e9edf2',
@@ -128,6 +129,7 @@ export class HomeComponent implements OnInit {
           xAxes: [{
             gridLines: {
               color: '#e9edf2',
+              display: false,
             },
             ticks: {
               fontColor: '#e9edf2',
@@ -143,6 +145,7 @@ export class HomeComponent implements OnInit {
           yAxes: [{
             gridLines: {
               color: '#e9edf2',
+              display: false,
             },
             ticks: {
               fontColor: '#e9edf2',
@@ -202,6 +205,7 @@ export class HomeComponent implements OnInit {
           xAxes: [{
             gridLines: {
               color: '#000000',
+              display: false,
             },
             ticks: {
               fontColor: '#000000',
@@ -217,6 +221,7 @@ export class HomeComponent implements OnInit {
           yAxes: [{
             gridLines: {
               color: '#000000',
+              display: false,
             },
             ticks: {
               fontColor: '#000000',
@@ -276,6 +281,7 @@ export class HomeComponent implements OnInit {
           xAxes: [{
             gridLines: {
               color: '#000000',
+              display: false,
             },
             ticks: {
               fontColor: '#000000',
@@ -291,6 +297,7 @@ export class HomeComponent implements OnInit {
           yAxes: [{
             gridLines: {
               color: '#000000',
+              display: false,
             },
             ticks: {
               fontColor: '#000000',
@@ -350,6 +357,7 @@ export class HomeComponent implements OnInit {
           xAxes: [{
             gridLines: {
               color: '#000000',
+              display: false,
             },
             ticks: {
               fontColor: '#000000',
@@ -365,6 +373,7 @@ export class HomeComponent implements OnInit {
           yAxes: [{
             gridLines: {
               color: '#000000',
+              display: false,
             },
             ticks: {
               fontColor: '#000000',
