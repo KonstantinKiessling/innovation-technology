@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {engineData} from '../../models/engineData';
 import { Chart } from 'chart.js';
 import * as ChartAnnotation from 'chartjs-plugin-annotation';
