@@ -10,6 +10,11 @@ import { SettingsComponent } from './settings/settings.component';
 import { SchmiermittelComponent } from './schmiermittel/schmiermittel.component';
 import { KugellagerlaufComponent } from './kugellagerlauf/kugellagerlauf.component';
 import { AnlageninnenlebenComponent } from './anlageninnenleben/anlageninnenleben.component';
+import { RpmChartComponent } from './charts/rpm-chart/rpm-chart.component';
+import { TempChartComponent } from './charts/temp-chart/temp-chart.component';
+import { LautChartComponent } from './charts/laut-chart/laut-chart.component';
+import { VibrChartComponent } from './charts/vibr-chart/vibr-chart.component';
+import { QualitaetsgrenzeChartComponent } from './charts/qualitaetsgrenze-chart/qualitaetsgrenze-chart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { AnlageninnenlebenComponent } from './anlageninnenleben/anlageninnenlebe
     SettingsComponent,
     SchmiermittelComponent,
     KugellagerlaufComponent,
-    AnlageninnenlebenComponent
+    AnlageninnenlebenComponent,
+    RpmChartComponent,
+    TempChartComponent,
+    LautChartComponent,
+    VibrChartComponent,
+    QualitaetsgrenzeChartComponent
   ],
   imports: [
     BrowserModule,
