@@ -15,17 +15,19 @@ export class SchmiermittelComponent implements OnInit {
   private toleranzgrenzeErreicht:boolean;
 
   ngOnInit() {
-    /*document.getElementById('home').classList.remove('active');
+    this.headerSelection();
+    this.dataService.getData();
+    this.dataService.dataChangeEvent.subscribe(data => {
+      this.Tavg_temp = data.map(dataPoint => parseFloat(dataPoint.werte.Tavg_temp));
+    });
+  }
+
+  headerSelection(){
+    document.getElementById('home').classList.remove('active');
     document.getElementById('schmiermittel').classList.add('active');
     document.getElementById('kugellagerlauf').classList.remove('active');
     document.getElementById('anlageninnenleben').classList.remove('active');
     document.getElementById('einstellungen').classList.remove('active');
-    Was hast du denn hier schon wieder gemacht Sven?*/
-
-    this.dataService.getData()
-    this.dataService.dataChangeEvent.subscribe(data => {
-      this.Tavg_temp = data.map(dataPoint => parseFloat(dataPoint.werte.Tavg_temp));
-    });
   }
 
   isTempTooHigh(){
@@ -35,8 +37,6 @@ export class SchmiermittelComponent implements OnInit {
     else if(this.Tavg_temp.some(temp => temp > 75)){
       this.toleranzgrenzeErreicht = true;
     }
-      
-    
   }
 
 }

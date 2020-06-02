@@ -10,6 +10,10 @@ export class KugellagerlaufComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.headerSelection();
+  }
+
+  headerSelection(){
     document.getElementById('home').classList.remove('active');
     document.getElementById('schmiermittel').classList.remove('active');
     document.getElementById('kugellagerlauf').classList.add('active');
