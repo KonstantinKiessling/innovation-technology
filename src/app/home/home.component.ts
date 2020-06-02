@@ -44,6 +44,7 @@ export class HomeComponent implements OnInit {
     this.Qualitaetsgrenze = data.map(dataPoint => parseFloat(dataPoint.werte.Qualitaetsgrenze));
     this.Datum = data.map(dataPoint => this.parseDate(dataPoint.datum));
     this.makeChart();
+    console.log(this.Datum);
     });
 
     let namedChartAnnotation = ChartAnnotation;
@@ -79,25 +80,25 @@ export class HomeComponent implements OnInit {
         scales: {
           xAxes: [{
             gridLines: {
-              color: '#000000',
+              color: '#e9edf2',
             },
             ticks: {
-              fontColor: '#000000',
+              fontColor: '#e9edf2',
             },
             display: true,
             type: 'time',
             time: {
               displayFormats: {
-                second: 'h:mm:ss a'
+                second: 'h:mm:ss'
               }
             }
           }],
           yAxes: [{
             gridLines: {
-              color: '#000000',
+              color: '#e9edf2',
             },
             ticks: {
-              fontColor: '#000000',
+              fontColor: '#e9edf2',
             },
             display: true
           }],
@@ -126,25 +127,25 @@ export class HomeComponent implements OnInit {
         scales: {
           xAxes: [{
             gridLines: {
-              color: '#000000',
+              color: '#e9edf2',
             },
             ticks: {
-              fontColor: '#000000',
+              fontColor: '#e9edf2',
             },
             display: true,
             type: 'time',
             time: {
               displayFormats: {
-                second: 'h:mm:ss a'
+                second: 'h:mm:ss'
               }
             }
           }],
           yAxes: [{
             gridLines: {
-              color: '#000000',
+              color: '#e9edf2',
             },
             ticks: {
-              fontColor: '#000000',
+              fontColor: '#e9edf2',
             },
             display: true
           }],
@@ -209,7 +210,7 @@ export class HomeComponent implements OnInit {
             type: 'time',
             time: {
               displayFormats: {
-                second: 'h:mm:ss a'
+                second: 'h:mm:ss'
               }
             }
           }],
@@ -283,7 +284,7 @@ export class HomeComponent implements OnInit {
             type: 'time',
             time: {
               displayFormats: {
-                second: 'h:mm:ss a'
+                second: 'h:mm:ss'
               }
             }
           }],
@@ -357,7 +358,7 @@ export class HomeComponent implements OnInit {
             type: 'time',
             time: {
               displayFormats: {
-                second: 'h:mm:ss a'
+                second: 'h:mm:ss'
               }
             }
           }],
